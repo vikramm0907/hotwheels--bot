@@ -159,7 +159,3 @@ def check_firstcry():
 if __name__ == "__main__":
     print("Running scheduled scan...")
     check_firstcry()
-
-
-if __name__ == "__main__":
-    main()
