@@ -2,9 +2,9 @@ name: HotWheels Bot
 
 on:
   schedule:
-    # Runs at:
-    # 4 AM, 6 AM, 9 AM–11 PM IST
-    - cron: '30 22,0,3-17 * * *'
+    # Runs every 5 minutes from 4:00 AM – ~10 PM IST
+    - cron: '30-59/5 22 * * *'
+    - cron: '*/5 23,0-16 * * *'
   workflow_dispatch:
 
 jobs:
