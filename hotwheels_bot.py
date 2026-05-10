@@ -14,7 +14,7 @@ TELEGRAM_BOT_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN")
 TELEGRAM_CHAT_ID = os.getenv("TELEGRAM_CHAT_ID")
 
 PINCODE = "500090"
-MAX_PRICE = 200
+MAX_PRICE = 750
 # RAW SEARCH (No filters in URL, we will click them manually)
 SEARCH_URL = "https://www.firstcry.com/search?q=hot%20wheels" 
 
