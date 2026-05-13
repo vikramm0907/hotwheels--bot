@@ -80,12 +80,12 @@ def check_firstcry():
             print("📉 Clicking Sort: Price Low to High...")
             
             # Click the Sort Dropdown Box
-            sort_dropdown = wait.until(EC.element_to_be_clickable((By.XPATH, "/html/body/div[5]/div[2]/div/div[2]/div[1]/div[2]/div[1]/div/div")))
+            sort_dropdown = wait.until(EC.element_to_be_clickable((By.XPATH, "/html/body/div[6]/div[2]/div/div[2]/div[1]/div[2]/div[1]/div/div")))
             sort_dropdown.click()
             time.sleep(1)
             
             # Click the 'Price' Option from the list
-            price_option = wait.until(EC.element_to_be_clickable((By.XPATH, "/html/body/div[5]/div[2]/div/div[2]/div[1]/div[2]/div[1]/ul/li[4]/a")))
+            price_option = wait.until(EC.element_to_be_clickable((By.XPATH, "/html/body/div[6]/div[2]/div/div[2]/div[1]/div[2]/div[1]/ul/li[4]/a")))
             price_option.click()
             
             print("✅ Sort applied. Waiting for grid refresh...")
@@ -96,7 +96,7 @@ def check_firstcry():
 
         # --- 3. SCRAPING ---
         print("🔍 Scanning sorted grid...")
-        products_xpath = "/html/body/div[5]/div[2]/div/div[2]/div[3]/div[1]/div[4]/div"
+        products_xpath = "/html/body/div[6]/div[2]/div/div[2]/div[3]/div[1]/div[2]/div[1]/div"
         wait.until(EC.presence_of_element_located((By.XPATH, products_xpath)))
         products = driver.find_elements(By.XPATH, products_xpath)
         
